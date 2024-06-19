@@ -180,3 +180,13 @@ ul.list>li.item a:visited{
   border: none;
 }
 
+
+.bg-black{
+  background-color: var(---mineshaft);
+}
+.bg-white{
+  background-color: var(---white);
+  color: var(---husk);
+  border-radius: var(---border-radius);
+}
+

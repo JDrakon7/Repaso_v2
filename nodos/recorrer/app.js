@@ -57,3 +57,52 @@ console.log(body.parentElement)
 // })
 
 
+//ejercicio
+
+const $padres = dom.getElementById("cards")
+console.log($padres.children)
+
+
+//etiquetas impares otro BG
+
+const nuevo = [...$padres.children]
+
+// let prueba = padres.children
+
+// let e = [...prueba]
+// const nuevo = [prueba]
+
+// nuevo.map((a, i) => {
+//   if (i % 2 !== 0 ) {
+//   a.classList.toggle("bg-white")
+//   }
+
+// });
+
+
+const $formulario = dom.getElementById('search')
+$formulario.setAttribute("accept", "multipart/form-data")
+
+const $input = dom.querySelector(".search__form > .search") //selector 
+// $input.setAttribute("autocomplete" ,"off")
+console.log($input)
+
+
+
+//custom propertys CSS
+
+const $html = dom.documentElement
+console.log($html)
+
+
+// const $element = getComputedStyle($html).getPropertyValues("---mineshaft: #343434")
+// const $white = getComputedStyle($html).getPropertyValue("---white")
+
+// $white.style.setproperty("--$element , #ffff")
+// $html.style.setProperty("")
+
+const $parrafo = dom.querySelector("#elementos")
+
+// $parrafo.textContent = `Lorem ipsum <br>dolor<br> sit, amet consectetur adipisicing elit. Neque sed sit velit similique quo libero cum hic iste, quos quaerat accusamus laborum praesentium soluta aliquid quam corrupti rem dolor fugit!`
+
+$parrafo.innerHTML = `Parrafo ipsum <br>dolor<br> sit, amet consectetur adipisicing elit. Neque sed sit velit similique quo libero cum hic iste, quos quaerat accusamus laborum praesentium soluta aliquid quam corrupti rem dolor fugit!`
