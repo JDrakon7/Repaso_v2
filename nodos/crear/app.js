@@ -24,4 +24,20 @@ datos.map(a => {
   $lista.className="item"
   $lista.appendChild(nombres)
 
+
+
+// USANDO FRAGMENTOS 
+
+const fragmento = document.createDocumentFragment();
+  // Utilizar map para generar elementos y agregarlos al fragmento
+datos.map(a => {
+  // Crear elementos dentro del fragmento
+  const nombres = document.createElement("li");
+  nombres.textContent = a.name;
+  fragmento.appendChild(nombres);
+});
+  
+$lista.appendChild(fragmento);
+$lista.className = "item"
+
 })
